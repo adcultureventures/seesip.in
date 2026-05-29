@@ -1,127 +1,691 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction | Corporate Identity</title>
-    <style>
-        :root {
-            --primary: #1a1a1a;
-            --secondary: #555555;
-            --accent: #c5a059;
-            --bg: #ffffff;
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+    <!-- 
+        Website built by ApexCause (https://apexcause.com)
+    -->
+    <meta name="author" content="ApexCause" />
+    <meta name="designer" content="ApexCause" />
+    <link rel="author" href="humans.txt" />
+    <link rel="author" href="https://apexcause.com" />
+    <link rel="designer" href="https://apexcause.com" />
 
-        body {
-            background-color: var(--bg);
-            color: var(--primary);
-            font-family: "Times New Roman", Times, serif; 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            padding: 40px 20px;
-        }
+    <title>See Sip | The Advertising People Don't Skip</title>
+    <link rel="icon" type="image/png" href="logo_with_text.png" />
 
-        .sans-font {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-        }
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700;800&family=Playfair+Display:ital,wght@1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-        .container {
-            width: 100%;
-            max-width: 700px;
-            text-align: left;
-        }
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="#" class="logo">
+            <img src="logo_with_text.png" alt="SeeSip Logo" />
+          </a>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#problem">Why Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#how-it-works">How it Works</a></li>
+            <li><a href="#plans">Plans</a></li>
+          </ul>
+          <div class="header-actions">
+            <a href="tel:+917219702806" class="accent call-btn-header"
+              ><i
+                class="fas fa-phone-alt"
+                style="
+                  transform: rotate(90deg);
+                  display: inline-block;
+                  margin-right: 5px;
+                "
+              ></i
+              >Call</a
+            >
+            <button class="hamburger" id="hamburgerMenu" aria-label="Toggle Menu">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-        .logo-text {
-            font-family: -apple-system, sans-serif;
-            font-size: 0.8rem;
-            font-weight: 700;
-            letter-spacing: 0.25em;
-            text-transform: uppercase;
-            margin-bottom: 4rem;
-            border-left: 3px solid var(--primary);
-            padding-left: 15px;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            line-height: 1.1;
-            font-weight: 400;
-            margin-bottom: 2rem;
-            color: var(--primary);
-        }
-
-        .description {
-            font-family: -apple-system, sans-serif;
-            font-size: 1.05rem;
-            color: var(--secondary);
-            max-width: 500px;
-            margin-bottom: 3.5rem;
-            line-height: 1.8;
-        }
-
-        .support-section {
-            font-family: -apple-system, sans-serif;
-            border-top: 1px solid #e0e0e0;
-            padding-top: 2rem;
-        }
-
-        .support-label {
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: var(--secondary);
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-
-        .support-email {
-            font-size: 1.1rem;
-            color: var(--primary);
-            text-decoration: none;
-            font-weight: 600;
-            transition: opacity 0.2s ease;
-        }
-
-        .support-email:hover {
-            opacity: 0.7;
-        }
-
-        @media (max-width: 768px) {
-            h1 { font-size: 2rem; }
-            .container { text-align: center; }
-            .logo-text { border-left: none; padding-left: 0; }
-            .description { margin: 0 auto 3rem auto; }
-        }
-
-        @media (min-width: 1024px) {
-            h1 { font-size: 3.5rem; }
-        }
-    </style>
-</head>
-<body>
-
-    <div class="container">
-        <div class="logo-text">SeeSip</div>
-        
-        <h1>Expanding our digital infrastructure.</h1>
-        
-        <p class="description">
-            Our full corporate suite is currently under development to better serve our clients and partners. We are committed to delivering a comprehensive experience shortly.
-        </p>
-
-        <div class="support-section">
-            <span class="support-label">Direct Inquiries & Support</span>
-            <a href="mailto:support@seesip.in" class="support-email">support@seesip.in</a>
+    <div class="page-wrapper">
+      <section id="hero">
+        <img src="left-bot-to-right-top.png" alt="" class="water-splash splash-hero" aria-hidden="true" />
+        <div class="container">
+          <div class="hero-content-box fade-in">
+            <h1 class="hero-headline">
+              The Advertising <br /><span class="accent">People Don't Skip</span>
+            </h1>
+            <p class="hero-sub">
+              SeeSip turns free drinking water into a powerful brand visibility
+              platform by placing branded bottles directly into consumers’ hands.
+            </p>
+            <div class="btn-group">
+              <a href="#contact" class="btn">Become a Brand Partner</a>
+            </div>
+          </div>
+          <div class="trust-pills fade-in">
+            <span class="pill"
+              ><i class="fas fa-walking"></i> High Footfall Distribution</span
+            >
+            <span class="pill"
+              ><i class="fas fa-hands"></i> Real Consumer Interaction</span
+            >
+            <span class="pill"
+              ><i class="fas fa-heart"></i> Positive Brand Association</span
+            >
+          </div>
         </div>
+      </section>
+
+      <div class="cred-strip">
+        <div class="container">
+          <div class="cred-container">
+            <p class="cred-label">Trusted by growing brand & event partners</p>
+            <div class="cred-grid">
+              <div class="cred-item">
+                <i class="fas fa-building"></i>
+                <span>Corporate Spaces</span>
+              </div>
+              <div class="cred-item">
+                <i class="fas fa-university"></i>
+                <span>College Events</span>
+              </div>
+              <div class="cred-item">
+                <i class="fas fa-award"></i>
+                <span>Exhibitions</span>
+              </div>
+              <div class="cred-item">
+                <i class="fas fa-dumbbell"></i>
+                <span>Fitness Centers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="problem" class="section-padding">
+        <img src="right-to-left.png" alt="" class="water-splash splash-problem" aria-hidden="true" />
+        <div class="container">
+          <div class="split-grid">
+            <div class="fade-in">
+              <h2 class="section-title">
+                Advertising Today Has a <span class="accent">Problem.</span>
+              </h2>
+              <div class="problem-list">
+                <p class="problem-item">
+                  People skip ads, block ads, and scroll past ads.
+                </p>
+                <p class="problem-item">
+                  Billboards are ignored; Digital ads are closed instantly.
+                </p>
+                <p class="problem-item">
+                  Brands spend crores trying to capture attention.
+                </p>
+              </div>
+              <p style="margin-top: 20px; font-style: italic; color: #666">
+                "Attention today is the most expensive currency."
+              </p>
+            </div>
+            <div class="solution-card fade-in">
+              <h2 class="section-title">
+                So We Created <span class="seesip-brand">See<span>Sip</span></span>.
+              </h2>
+              <p>
+                SeeSip transforms a simple everyday necessity, drinking water,
+                into a high-impact advertising platform.
+              </p>
+              <p style="margin-top: 20px">
+                Instead of interrupting people, we engage them in a moment they
+                genuinely appreciate.
+              </p>
+              <ul style="margin-top: 25px; font-weight: 700">
+                <li><i class="fas fa-check accent"></i> A bottle of water.</li>
+                <li><i class="fas fa-check accent"></i> A moment of relief.</li>
+                <li>
+                  <i class="fas fa-check accent"></i> A brand that gets
+                  remembered.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="gallery"
+        class="section-padding"
+        style="background: var(--light-gray)"
+      >
+        <img src="left-to-right.png" alt="" class="water-splash splash-gallery" aria-hidden="true" />
+        <div class="container">
+          <div class="center fade-in">
+            <h2 class="section-title">SeeSip in Action</h2>
+            <p
+              style="
+                max-width: 700px;
+                margin: 0 auto;
+                color: #555;
+                font-size: 1rem;
+                font-weight: 500;
+              "
+            >
+              A collection of premium label placements that showcase the power of
+              branded bottled water advertising.
+            </p>
+          </div>
+          <div class="gallery-wrapper fade-in">
+            <div class="gallery-images-grid">
+              <div class="gallery-image-wrapper">
+                <img
+                  src="seesip_product_0.jpeg"
+                  alt="SeeSip branded bottle example 1"
+                />
+              </div>
+              <div class="gallery-image-wrapper">
+                <img
+                  src="seesip_product_1.jpeg"
+                  alt="SeeSip branded bottle example 2"
+                />
+              </div>
+              <div class="gallery-image-wrapper">
+                <img
+                  src="seesip_product_2.jpeg"
+                  alt="SeeSip branded bottle example 3"
+                />
+              </div>
+              <div class="gallery-image-wrapper">
+                <img
+                  src="seesip_product_3.jpeg"
+                  alt="SeeSip branded bottle example 4"
+                />
+              </div>
+            </div>
+            <div class="gallery-video-wrapper">
+              <video autoplay muted loop playsinline preload="metadata">
+                <source src="product_video.mp4" type="video/mp4" />
+                Your browser does not support HTML5 video.
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="how-it-works"
+        class="section-padding"
+        style="background: var(--light-gray)"
+      >
+        <img src="right-bot-to-left-top.png" alt="" class="water-splash splash-how" aria-hidden="true" />
+        <div class="container center">
+          <h2 class="section-title fade-in">
+            How It <span class="accent">Works</span>
+          </h2>
+          <div class="step-grid-four">
+            <div class="step-card fade-in">
+              <div class="step-num">1</div>
+              <h4>Partner</h4>
+              <p>Brand partners with SeeSip.</p>
+            </div>
+            <div class="step-card fade-in">
+              <div class="step-num">2</div>
+              <h4>Design</h4>
+              <p>Brand artwork is printed on premium bottles.</p>
+            </div>
+            <div class="step-card fade-in">
+              <div class="step-num">3</div>
+              <h4>Distribute</h4>
+              <p>Bottles are distributed at high-footfall locations.</p>
+            </div>
+            <div class="step-card fade-in">
+              <div class="step-num">4</div>
+              <h4>Interact</h4>
+              <p>Consumers engage naturally with your brand.</p>
+            </div>
+          </div>
+          <p
+            class="accent fade-in"
+            style="margin-top: 40px; font-weight: 800; text-transform: uppercase"
+          >
+            Real interaction. Real visibility.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-padding">
+        <div class="container center">
+          <h2 class="section-title fade-in">Our Growing Impact</h2>
+          <div class="metrics-grid">
+            <div class="metric-item fade-in">
+              <span class="metric-num">10K+</span>
+              <span class="metric-label">Bottles Distributed</span>
+            </div>
+            <div class="metric-item fade-in">
+              <span class="metric-num">10K+</span>
+              <span class="metric-label">Consumer Reach</span>
+            </div>
+            <div class="metric-item fade-in">
+              <span class="metric-num">15+</span>
+              <span class="metric-label">Brand Campaigns</span>
+            </div>
+            <div class="metric-item fade-in">
+              <span class="metric-num">5+</span>
+              <span class="metric-label">Cities Planned</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-padding" style="background: var(--light-gray)">
+        <img src="left-bot-to-right-top.png" alt="" class="water-splash splash-comparison" aria-hidden="true" />
+        <div class="container">
+          <h2 class="section-title center fade-in">
+            The Advertising <span class="accent">People Don't Skip</span>
+          </h2>
+          <div class="comparison-cards fade-in">
+            <div class="comp-header">
+              <div class="comp-col trad">Traditional Ads</div>
+              <div class="comp-col seesip-col">
+                <span class="seesip-brand">See<span>Sip</span></span> Water
+              </div>
+            </div>
+            <div class="comp-row">
+              <div class="comp-col trad"><i class="fas fa-times-circle"></i> Skipped / Blocked</div>
+              <div class="comp-col seesip-col"><i class="fas fa-check-circle"></i> Engaged / Used</div>
+            </div>
+            <div class="comp-row">
+              <div class="comp-col trad"><i class="fas fa-clock"></i> Seconds of Attention</div>
+              <div class="comp-col seesip-col"><i class="fas fa-hourglass-half"></i> Minutes of Interaction</div>
+            </div>
+            <div class="comp-row">
+              <div class="comp-col trad"><i class="fas fa-eye"></i> Passive Viewing</div>
+              <div class="comp-col seesip-col"><i class="fas fa-hand-holding-water"></i> Physical Interaction</div>
+            </div>
+            <div class="comp-row">
+              <div class="comp-col trad"><i class="fas fa-ban"></i> Interruptive</div>
+              <div class="comp-col seesip-col"><i class="fas fa-heart"></i> Positive Brand Association</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="plans" class="section-padding" style="background: white;">
+        <img src="right-bot-to-left-top.png" alt="" class="water-splash splash-plans" aria-hidden="true" />
+        <div class="container">
+            <div class="center fade-in">
+                <h2 class="section-title">Flexible Brand <span class="accent">Visibility Options</span></h2>
+                <p style="max-width: 700px; margin: 0 auto; color: #555; font-size: 1rem; font-weight: 500;">
+                    Choose the plan that aligns perfectly with your campaign goals and marketing budget.
+                </p>
+            </div>
+            <div class="plans-grid">
+                <div class="plan-card fade-in">
+                    <h3 style="font-size: 1.8rem; margin-bottom: 10px; color: var(--text-color);"><span class="seesip-brand">See<span>Sip</span></span> Smart Plan</h3>
+                    <p style="color: #64748b; font-size: 0.95rem;">Cost-efficient reach for awareness campaigns.</p>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check accent"></i> Three brands share one bottle</li>
+                        <li><i class="fas fa-check accent"></i> Cost-efficient reach</li>
+                        <li><i class="fas fa-check accent"></i> Ideal for awareness campaigns</li>
+                    </ul>
+                </div>
+                <div class="plan-card featured fade-in">
+                    <h3 style="font-size: 1.8rem; margin-bottom: 10px; color: var(--text-color);"><span class="seesip-brand">See<span>Sip</span></span> Impact Plan</h3>
+                    <p style="color: #64748b; font-size: 0.95rem;">Single brand dominance. Total label ownership for maximum recall.</p>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check accent"></i> Single Brand Dominance</li>
+                        <li><i class="fas fa-check accent"></i> Stronger Recall</li>
+                        <li><i class="fas fa-check accent"></i> Premium Positioning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="section-padding">
+        <div class="container">
+          <div class="impact-box fade-in">
+            <div class="impact-content">
+              <h2 class="section-title">
+                Advertising With <span class="accent">Purpose</span>
+              </h2>
+              <p>
+                SeeSip is not just an advertising platform. By distributing free
+                drinking water in public spaces, we combine brand visibility with
+                community impact.
+              </p>
+              <p style="margin-top: 15px">
+                Brands gain exposure while supporting a meaningful public service.
+              </p>
+            </div>
+            <i
+              class="fas fa-hand-holding-heart accent"
+              style="font-size: 8rem; opacity: 0.2"
+            ></i>
+          </div>
+        </div>
+      </section>
+
+      <section id="powered-by" class="section-padding" style="background: var(--light-gray)">
+        <img src="left-to-right.png" alt="" class="water-splash splash-powered" aria-hidden="true" />
+        <div class="container center">
+          <div style="max-width: 800px; margin: 0 auto">
+            <h3
+              style="
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-size: 0.8rem;
+                margin-bottom: 20px;
+              "
+            >
+              Powered By
+            </h3>
+            <p style="font-size: 1.1rem; margin-bottom: 50px">
+              <span class="seesip-brand">See<span>Sip</span></span> is powered by
+              <a
+                href="https://adcultureventures.com"
+                target="_blank"
+                style="color: var(--accent-color-2); text-decoration: underline"
+                ><strong>AdCulture Ventures LLP</strong></a
+              >, an innovation-led advertising company focused on building
+              next-generation media platforms that combine real-world experiences
+              with impactful brand communication.
+            </p>
+
+            <hr
+              style="
+                border: none;
+                border-top: 1px solid #ddd;
+                margin-bottom: 50px;
+              "
+            />
+
+            <h2 class="section-title">What Our Partners Say</h2>
+            <div class="plans-grid testimonials-grid">
+              <div class="fade-in testimonial-card">
+                <p style="font-style: italic">
+                  “SeeSip created unique visibility for our brand during a college
+                  event. The engagement was organic and positive.”
+                </p>
+                <p style="margin-top: 15px; font-weight: 700">— Event Partner</p>
+              </div>
+              <div class="fade-in testimonial-card">
+                <p style="font-style: italic">
+                  “Simple concept, strong brand recall. It's the first time people
+                  actually thanked us for an advertisement.”
+                </p>
+                <p style="margin-top: 15px; font-weight: 700">
+                  — Marketing Manager
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        class="section-padding"
+        style="background: var(--light-gray)"
+      >
+        <img src="right-bot-to-left-top.png" alt="" class="water-splash splash-contact" aria-hidden="true" />
+        <div class="container center fade-in">
+          <h2 class="section-title">Let Your Brand Be Seen Where It Matters</h2>
+          <p style="font-size: 1.2rem; margin-bottom: 40px; color: #555">
+            Reach out to us using the form below or email us at
+            <a
+              href="mailto:sales@seesip.in"
+              class="accent"
+              style="font-weight: 700; text-decoration: underline"
+              >sales@seesip.in</a
+            >
+          </p>
+
+          <div class="contact-form-card">
+            <form
+              id="contactForm"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="a160475b-c039-4d52-aeed-3d179b2eefca"
+              />
+
+              <div class="form-grid">
+                <div class="form-group full-width callback-box">
+                  <div class="checkbox-group">
+                    <input
+                      type="checkbox"
+                      id="requestCallback"
+                      name="callback"
+                      onchange="togglePhoneRequirement()"
+                    />
+                    <label for="requestCallback">
+                      <strong>Request a callback</strong>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Name <span class="required">*</span></label>
+                  <input
+                    type="text"
+                    name="name"
+                    autocomplete="name"
+                    class="form-input"
+                    required
+                    placeholder="John Doe"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Email <span class="required">*</span></label>
+                  <input
+                    type="email"
+                    name="email"
+                    autocomplete="email"
+                    class="form-input"
+                    required
+                    placeholder="john@company.com"
+                  />
+                </div>
+
+                <div
+                  class="form-group full-width"
+                  id="phoneGroup"
+                  style="display: none; transition: 0.3s"
+                >
+                  <label class="form-label" id="phoneLabel">Phone Number <span class="required">*</span></label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phoneNumber"
+                    autocomplete="tel"
+                    class="form-input"
+                    placeholder="+91 00000 00000"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Organization</label>
+                  <input
+                    type="text"
+                    name="organization"
+                    autocomplete="organization"
+                    class="form-input"
+                    placeholder="Company Name"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">City</label>
+                  <input
+                    type="text"
+                    name="city"
+                    autocomplete="address-level2"
+                    class="form-input"
+                    placeholder="e.g. Mumbai"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Country</label>
+                  <input
+                    type="text"
+                    name="country"
+                    autocomplete="address-level4"
+                    class="form-input"
+                    placeholder="e.g. India"
+                  />
+                </div>
+
+                <div class="form-group full-width">
+                  <label class="form-label">Message</label>
+                  <textarea
+                    name="message"
+                    class="form-input"
+                    placeholder="Tell us about your requirements..."
+                  ></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn form-submit">
+                Send Request <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+          <div class="footer-grid">
+            <div>
+              <a href="#" class="footer-logo">
+                <img src="logo_with_text.png" alt="SeeSip Logo" />
+              </a>
+              <span
+                style="
+                  font-size: 0.75rem;
+                  text-transform: uppercase;
+                  letter-spacing: 0.5px;
+                  opacity: 0.75;
+                  font-weight: 700;
+                "
+                >Powered by AdCulture Ventures</span
+              >
+              <div class="social-icons">
+                <a
+                  href="https://www.instagram.com/see.sip"
+                  target="_blank"
+                  aria-label="Instagram"
+                  style="
+                    color: var(--text-color);
+                    transition: var(--transition);
+                    opacity: 0.7;
+                  "
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/adculture-ventures/"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                  style="
+                    color: var(--text-color);
+                    transition: var(--transition);
+                    opacity: 0.7;
+                  "
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+            <div class="footer-links">
+              <h4>Company</h4>
+              <ul>
+                <li>
+                  <a href="https://adcultureventures.com" target="_blank"
+                    >About Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-links">
+              <h4>Advertising</h4>
+              <ul>
+                <li><a href="#plans">Smart Plan</a></li>
+                <li><a href="#plans">Impact Plan</a></li>
+              </ul>
+            </div>
+            <div class="footer-links">
+              <h4>Reach out</h4>
+              <ul>
+                <li><a href="tel:+917219702806">Call</a></li>
+                <li><a href="mailto:sales@seesip.in">Email</a></li>
+              </ul>
+            </div>
+          </div>
+          <div
+            style="
+              padding-top: 40px;
+              border-top: 1px solid #ddd;
+              font-size: 0.8rem;
+              opacity: 0.6;
+              display: flex;
+              justify-content: space-between;
+              flex-wrap: wrap;
+              gap: 20px;
+            "
+          >
+            <p style="text-align: left; margin: 0">
+              &copy; 2026 SeeSip by
+              <a
+                href="https://adcultureventures.com"
+                target="_blank"
+                style="text-decoration: underline"
+                >AdCulture Ventures LLP</a
+              >. All rights reserved.
+            </p>
+            <p style="text-align: right; margin: 0">
+              Website passionately built by
+              <a
+                href="https://apexcause.com"
+                target="_blank"
+                rel="noopener"
+                style="text-decoration: underline"
+                >ApexCause</a
+              >
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
 
-</body>
+    <div id="formModal" class="modal-overlay">
+      <div class="modal-content">
+        <div class="modal-icon" id="modalIcon"></div>
+        <h3 class="modal-title" id="modalTitle">Status</h3>
+        <p class="modal-message" id="modalMessage">Message goes here.</p>
+        <button class="btn" style="width: 100%" onclick="closeModal()">Close</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
